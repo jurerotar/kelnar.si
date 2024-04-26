@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "types": ["vite/client", "vite-plugin-svgr/client", "vitest/globals"],
+    "baseUrl": "./",
+    "allowJs": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "resolveJsonModule": true,
+    "jsx": "react-jsx",
+    "moduleResolution": "node",
+    "noEmit": true,
+    "strict": true,
+    "module": "esnext",
+    "paths": {
+      "app/*": ["src/app/*"],
+      "interfaces/*": ["src/interfaces/*"],
+      "test-utils": ["src/test-utils"]
+    }
+  },
+  "exclude": ["node_modules"],
+  "include": ["vite-env.d.ts", "src", "**.config.ts", "__mocks__", "vitest-setup.ts"]
+}
